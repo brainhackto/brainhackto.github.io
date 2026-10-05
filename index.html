@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brainhack Toronto is a community for collaboration and open science in brain research.">
+  <title>Brainhack Toronto</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #f5f2e9;
+      background: #111c2b;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      background:
+        radial-gradient(ellipse at 82% 18%, rgb(87 210 177 / 12%), transparent 34rem),
+        #111c2b;
+    }
+
+    main {
+      width: min(100%, 760px);
+      padding: clamp(2rem, 8vw, 5.5rem);
+      border: 1px solid rgb(245 242 233 / 14%);
+      border-radius: 1.5rem;
+      background: rgb(20 33 49 / 84%);
+      box-shadow: 0 2rem 6rem rgb(0 0 0 / 22%);
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin: 0 0 2rem;
+      color: #83e3c3;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .mark {
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background: #83e3c3;
+      box-shadow: 0 0 1.25rem rgb(131 227 195 / 60%);
+    }
+
+    h1 {
+      max-width: 11ch;
+      margin: 0;
+      font-size: clamp(3rem, 11vw, 6.5rem);
+      font-weight: 750;
+      letter-spacing: -0.075em;
+      line-height: 0.98;
+    }
+
+    h1 span {
+      color: #83e3c3;
+    }
+
+    .intro {
+      max-width: 36rem;
+      margin: 1.75rem 0 0;
+      color: #c4ced8;
+      font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+      line-height: 1.7;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-top: 2.25rem;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 3rem;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.1rem;
+      border: 1px solid #83e3c3;
+      border-radius: 0.55rem;
+      color: #111c2b;
+      background: #83e3c3;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 150ms ease, color 150ms ease;
+    }
+
+    .button.secondary {
+      color: #f5f2e9;
+      background: transparent;
+    }
+
+    .button:hover {
+      color: #111c2b;
+      background: #a3efd5;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #f5ba75;
+      outline-offset: 4px;
+    }
+
+    .community {
+      margin: 3.5rem 0 0;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgb(245 242 233 / 14%);
+      color: #9eacbb;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    .community a {
+      color: #c4ced8;
+      text-decoration-color: rgb(196 206 216 / 45%);
+      text-underline-offset: 0.2em;
+    }
+
+    .community a:hover {
+      color: #83e3c3;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow"><span class="mark" aria-hidden="true"></span> A community for open science</p>
+    <h1>Brainhack <span>Toronto</span></h1>
+    <p class="intro">We bring people together to share ideas, tools, and knowledge—and make brain research more open, collaborative, and reproducible.</p>
+    <nav class="links" aria-label="Get involved">
+      <a class="button" href="mailto:brainhacktoronto@gmail.com">Get in touch</a>
+      <a class="button secondary" href="https://brainhackto.github.io/brainhack-toronto-01-2026/">Explore our 2026 event</a>
+    </nav>
+    <p class="community">
+      Find us on
+      <a href="https://github.com/brainhackto">GitHub</a>,
+      <a href="https://twitter.com/brainhackto">X / Twitter</a>, or
+      <a href="https://mattermost.brainhack.org/brainhack/channels/brainhack-toronto">Brainhack Mattermost</a>.
+    </p>
+  </main>
+</body>
+</html>
